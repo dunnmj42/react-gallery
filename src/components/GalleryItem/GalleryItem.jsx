@@ -1,9 +1,7 @@
-function GalleryItem({ imageList }) {
+function GalleryItem({ image }) {
   return (
     <div>
-      {imageList.map((image) => (
         <img key={image.id} src={image.path} />
-      ))}
     </div>
   );
 }

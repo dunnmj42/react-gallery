@@ -3,9 +3,12 @@ import GalleryItem from "../GalleryItem/GalleryItem";
 function GalleryList({imageList}) {
   return (
     <div>
-      <GalleryItem
-        imageList={imageList}
-      />
+        {imageList.map((image) => (
+        <GalleryItem
+            image={image}
+            key={image.id}
+        />
+      ))}
     </div>
   );
 }
