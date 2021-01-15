@@ -23,6 +23,23 @@ function App() {
       });
   };
 
+  const likeImage = (event) => {
+
+    event.preventDefault();
+    let id = event.target.id;
+
+    console.log("Liking image with id:", id);
+
+    axios
+      .put(`/gallery/like/${id}`)
+      .then((response) => {
+        getImages();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
     return (
       <div className="App">
         <header className="App-header">
@@ -31,6 +48,7 @@ function App() {
         <p>Gallery goes here</p>
         <GalleryList
           imageList={imageList}
+          likeImage={likeImage}
         />
       </div>
     );
