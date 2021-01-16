@@ -1,6 +1,6 @@
 import GalleryItem from "../GalleryItem/GalleryItem";
 
-function GalleryList({imageList, likeImage}) {
+function GalleryList({ imageList, likeImage }) {
   return (
     <div>
         {imageList.map((image) => (
