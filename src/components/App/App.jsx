@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import GalleryList from '../GalleryList/GalleryList'
-import './App.css';
+import GalleryList from "../GalleryList/GalleryList";
+import "./App.css";
 
 function App() {
-
   const [imageList, setImageList] = useState([]);
 
   useEffect(() => {
@@ -24,7 +23,6 @@ function App() {
   };
 
   const likeImage = (event) => {
-
     event.preventDefault();
     let id = event.target.id;
 
@@ -40,18 +38,15 @@ function App() {
       });
   };
 
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
-        </header>
-        <p>Gallery goes here</p>
-        <GalleryList
-          imageList={imageList}
-          likeImage={likeImage}
-        />
-      </div>
-    );
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1 className="App-title">Gallery of My Life</h1>
+      </header>
+      <p>Gallery goes here</p>
+      <GalleryList imageList={imageList} likeImage={likeImage} />
+    </div>
+  );
 }
 
 export default App;
