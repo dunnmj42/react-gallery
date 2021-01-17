@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import GalleryList from "../GalleryList/GalleryList";
 import "./App.css";
+import GalleryForm from "../GalleryForm/GalleryForm";
 
 function App() {
   const [imageList, setImageList] = useState([]);
@@ -43,6 +44,8 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Gallery of My Life</h1>
       </header>
+      <GalleryForm/>
+      <hr></hr>
       <GalleryList imageList={imageList} likeImage={likeImage} />
     </div>
   );
