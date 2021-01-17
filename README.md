@@ -2,8 +2,6 @@
 
 ## Description
 
-_Duration: React Gallery Project_
-
 A simple gallery app with image descriptions that can be toggled by clicking the image and a "like" functionality that allows the user to like an image as many times as they would like. All likes, descriptions, and image paths are stored in a postgreSQL database for permanence.
 
 ## Installation
