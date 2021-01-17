@@ -10,7 +10,7 @@ function GalleryItem({ image, likeImage }) {
           {image.description}
         </p>
       ) : (
-        <img key={image.id} src={image.path} onClick={setShowDescription} width={'300rem'} />
+        <img key={image.id} src={image.path} onClick={setShowDescription} width={'400rem'} />
       )}
       <div>
         <button id={image.id} onClick={likeImage}>
