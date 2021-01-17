@@ -11,16 +11,6 @@ A simple gallery app with image descriptions that can be toggled by clicking the
 3. Open up your editor of choice and run `npm install` in the terminal
 4. Run `npm run server` 
 5. Run `npm run client`
-
-## Dependencies
-
-1. "axios": "^0.21.1",
-2. "express": "^4.17.1",
-3. "pg": "^8.5.1",
-4. "react": "^17.0.1",
-5. "react-dom": "^17.0.1",
-6. "react-scripts": "^4.0.1"
-
 ## Built With
 
  React, Node.js, and PostgreSQL.
